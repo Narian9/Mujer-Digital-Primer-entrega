@@ -12,24 +12,34 @@
 </head>
 <body>
     <header id="header" >
-        <nav class="fixed-top" ><h1 class="name-site">Science Classroom</h1>
-        <ul>
-            <li>Explore</li>
-            <li>
-                <form action="">
-                 <input type="search" name="" id="" placeholder="What are you looking for?...">
-                <button type="submit"><img src="" alt=""></button>   
-                </form>        
-            </li>
-            <li><img src="" alt="">Chemistry</li>
-            <li>Math</li>            
-            <li>Calculator</li>
-            <li>Periodic Table</li>
-        </ul></nav>
+        <nav class="fixed-top navbar navbar-expand-lg bg-body-tertiary" >
+          <div class="container-fluid">         
+          <a class="navbar-brand" href=""><div class="name-site-container"><h1 class="name-site text-wrap">Science Classroom</h1></div></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">Explore</li>
+              <li>
+                  <form action="">
+                   <input type="search" name="" id="" placeholder="What are you looking for?...">
+                  <button type="submit"><img src="" alt=""></button>   
+                  </form>        
+              </li>
+              <li class="nav-item"><img src="" alt="">Chemistry</li>
+              <li class="nav-item">Math</li>            
+              <li class="nav-item">Calculator</li>
+              <li class="nav-item">Periodic Table</li>
+          </ul>
+
+          </div>
+        </div>
+        </nav>
     </header>
     <main class="container-fluid row p-0 m-0">
         <section class="col container-fluid carousel-black-section">
-            <div id="carouselIndicators" class="carousel slide container-fluid">
+            <div id="carouselIndicators" class="carousel slide container-md-fluid">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -71,13 +81,13 @@
               <button type="button" data-bs-target="#infoCarouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner container-fluid">
-              <div class="carousel-item infoCarousel-item active flex-direction-center container-fluid">
+              <div class="carousel-item infoCarousel-item active flex-direction-center">
                 <div class="carousel-slide container-fluid row align-items-center">
-                  <picture class="col">
+                  <figure class="col-lg-6 col-md">
                     <img class="img-fluid " src="./assets/images/tierra-capas.png" alt="">
-                  </picture>
-                  <div class="col">
-                    <h1>¿Qué es la Geoquímica? </h1>
+                  </figure>
+                  <div class="col-lg-6 col-md container-fluid p-sm-0">
+                    <h3>¿Qué es la Geoquímica? </h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse delectus, minima fugiat omnis corrupti voluptatem debitis magnam ab illo id amet nisi animi dolorum vitae? Molestias amet accusantium voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Quae ab officia nostrum deserunt, fugit possimus adipisci illo harum, consequatur error nisi pariatur totam temporibus non. Pariatur illum officiis tempore ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat officia quos velit, tempore impedit provident ipsum eveniet rem ratione consequatur modi at nisi recusandae pariatur tempora quod aperiam. Modi?</p>
                   </div>
@@ -86,11 +96,11 @@
               <div class="carousel-item infoCarousel-item container-fluid">
                 <!--  -->
                 <div class="carousel-slide container-fluid row align-items-center">
-                  <div class="col">
-                    <h2>Distribución de los elementos en la Tierra y en los sistemas vivos </h2>
+                  <div class="col-lg-6 col-md container-fluid">
+                    <h3>Distribución de los elementos en la Tierra y en los sistemas vivos </h3>
                     <p>Aproximadamente la extensión de la corteza terrestre, desde la superficie hacia el centre de la Tierra, es de 40 kilómetros. Debido a dificualtades técnicas, los cientificos no han podido estudiar las porciones internas del planeta con tanta facilidad com las de la corteza. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse delectus, minima fugiat omnis corrupti voluptatem debitis magnam ab illo id amet nisi animi dolorum vitae? Molestias amet accusantium voluptatibus? </p>
                   </div>
-                  <div class="col">
+                  <div class="col-lg-6 col-md">
                     <table>
                       <tr><th>Elemento</th><th>Porcentaje en masa</th></tr>
                       <tr><td>Oxígeno</td><td>65</td></tr>
@@ -108,14 +118,14 @@
                 </div>
                 <!--  -->
               </div>
-              <div class="carousel-item infoCarousel-item">
+              <div class="carousel-item infoCarousel-item container-fluid">
                 <!--  -->
                 <div class="carousel-slide container-fluid row align-items-center">
-                  <figure class="figure col">
-                    <img class="img-fluid " src="./assets/images/mar-mg.png" alt="">
+                  <figure class="figure col-lg-6 col-md container-sm">
+                    <img class="img-fluid" src="./assets/images/mar-mg.png" alt="">
                   </figure>
-                  <div class="col ">
-                     <h1>Metal proveniente del mar </h1>
+                  <div class="col-lg-6 col-md container-fluid">
+                     <h3>Metal proveniente del mar </h3>
                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam esse delectus, minima fugiat omnis corrupti voluptatem debitis magnam ab illo id amet nisi animi dolorum vitae? Molestias amet accusantium voluptatibus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ab officia nostrum deserunt, fugit possimus adipisci illo harum, consequatur error nisi pariatur totam temporibus non. Pariatur illum officiis tempore ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellat officia quos velit, tempore impedit provident ipsum eveniet rem ratione consequatur modi at nisi recusandae pariatur tempora quod aperiam. Modi?
                      </p>
                     </div>
@@ -135,7 +145,8 @@
           <!--  -->
         </section>
 
-        <section class="people-section col-12">
+        <section class="people-section col-12 p-2">
+          <div class="container p-2"><h1>Científicos</h1></div>
           <div id="peopleCarouselIndicators" class="carousel peopleCarousel slide container-fluid">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#peopleCarouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -145,16 +156,16 @@
             </div>
             <div class="carousel-inner carruselInner container-fluid">
               <div class="carousel-item peopleCarousel-item active ">
-                <div class="carousel-slide container-fluid">
+                <div class="carousel-slide">
                   <!-- Información persona -->
-                  <div class="card" style="width: 18rem;">
+                  <div class="card ">
                     <img src="./assets/images/people/Erwin-Schrödinger.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Erwin-Schrödinger</h5>
                       <p class="card-text">Erwin Schrödinger es conocido por sus aportaciones y desarrollo de la física cuántica, mecánica cuántica y termodinámica. Recibió el premio Nobel de física en 1933.
                         La paradoja de Schrödinger es un ejercicio mental concebido por este mismo gran científico la cual permite comprender sus interpretaciones sobre la física cuántica.
                       </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-light">Ver más...</a>
                     </div>
                   </div>
                   <!-- Información persona -->
@@ -165,12 +176,12 @@
                 <!--  -->
                 <div class="carousel-slide">
                   <!-- Información persona -->
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" >
                     <img src="./assets/images/people/Isaac-Asimov.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Isaac Asimov</h5>
                       <p class="card-text">Isaac Asimov es conocido por sus leyes sobre la robótica, aunque era profesor de bioquímica. Es más conocido por ser el autor de innumerables obras de ciencia ficción en la que se exponen las leyes que deberían regir los futuros robots con inteligencia artificial.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-light">Ver más...</a>
                     </div>
                   </div>
 
@@ -180,14 +191,14 @@
               </div>
               <div class="carousel-item peopleCarousel-item">
                 <!--  -->
-                <div class="carousel-slide container-fluid">
+                <div class="carousel-slide ">
                   <!-- Información persona -->
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" >
                     <img src="./assets/images/people/John-Dalton.png" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">John Dalton</h5>
                       <p class="card-text">Durante su temprana carrera como científico, Dalton investigó el daltonismo, un tema con el que estaba familiarizado a través de la experiencia de primera mano. </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-light">Ver más...</a>
                     </div>
                   </div>
                   <!-- Información persona -->
@@ -196,16 +207,16 @@
                   <!--  -->
                 </div>
                 <div class="carousel-item peopleCarousel-item"> 
-                  <div class="carousel-slide container-fluid">
+                  <div class="carousel-slide">
                   <!-- Información persona -->
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" >
                     <img src="./assets/images/people/Erwin-Schrödinger.webp" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Erwin-Schrödinger</h5>
                       <p class="card-text">Erwin Schrödinger es conocido por sus aportaciones y desarrollo de la física cuántica, mecánica cuántica y termodinámica. Recibió el premio Nobel de física en 1933.
                         La paradoja de Schrödinger es un ejercicio mental concebido por este mismo gran científico la cual permite comprender sus interpretaciones sobre la física cuántica.
                       </p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <a href="#" class="btn btn-light">Ver más...</a>
                     </div>
                   </div>
                   <!-- Información persona -->

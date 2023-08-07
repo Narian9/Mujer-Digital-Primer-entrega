@@ -12,6 +12,7 @@ nav{
     box-shadow: -1px 1px 9px 1px rgba(0, 0, 0, 0.19);
     padding: 3vh;
     margin-bottom: 5px ;
+    height: 15vh;
 }
 nav > ul li{
     display: inline-block;
@@ -110,14 +111,27 @@ form{
 .infoCarousel-section > picture {
     width: 10vw !important;
 }
+.container-fluid > h3{
+    font-weight: bolder;
+}
 .peopleCarousel{
-    width: 90% !important;
+    width: 90vw !important;
     margin: 12px;
     padding: 0;
+    font-size: small !important;
 }
-.peopleCarousel {
- font-size: small !important;
+.card{
+    width: 18rem;
 }
+.arrow{
+    background: #fffefe00 !important;
+
+}  
+.arrow:hover {
+    background: #cccccc09 !important;
+    cursor: pointer;
+}
+ 
 /** People carousel*/
 @media (min-width: 767px) {
     .carruselInner .categoriaItem > div {
@@ -138,93 +152,55 @@ form{
 }
 
 @media (min-width: 768px) {
-
     .carruselInner .carousel-item-end.active,
     .carruselInner .carousel-item-next {
-        transform: translateX(20%) !important;
-        
+        transform: translateX(20%) !important;    
     }
-
     .carruselInner .carousel-item-start.active, 
     .carruselInner .carousel-item-prev {
         transform: translateX(-20%) !important;
 
     }
 }
-
 .carruselInner .carousel-item-end,
 .carruselInner .carousel-item-start { 
     transform: translateX(0) !important;
 }
-/**prueba carrusel*/
+@media (max-width: 576px) {
+    nav {
+        height: 18vh;
+        }
+        .navbar-brand,.name-site-container {
+            width: 55vw;
+            word-wrap: break-word !important;
+        }
+        .name-site-container > h1{
+            font-size: 35px;
+            
+        }
+        .arrow{
+            width: 10px !important;
+            padding: 0;
+        }
+        .infoCarousel-section, .infoCarousel, .infoCarousel-item{
+            padding: 0   !important;
+            margin: 0 !important;
+        }
+        .infoCarousel-item{
+            width: 100vw !important;
+            height: fit-content;
+        }
+        .container-fluid > p{
+            font-weight:100;
+            font-size: small;
+            text-align: justify;
+        }
+        .card{
+            width: 14rem;
+            padding-left: 0 !important;
+        }
 
-  
-#carouselPrueba {
-    position: relative;
-    width: 90%;
-    border: 1px solid #CCC;
-    border-radius: 15px;
-    background: #ffffff;
+    
 }
-#carouselPrueba img {
-    width: 130px;
-    height: 130px;
-    /* establecer block para remover el espacio alrededor de las imágenes */
-    display: block;
-    margin: 15px;
-}
-  
-#carouselPrueba > .arrow {
-    position: absolute;
-    top: 60px;
-    margin: 10px;
-    padding: 0;
-    background: #ddd;
-    border-radius: 15px;
-    border: 1px solid gray;
-    font-size: 24px;
-    line-height: 24px;
-    color: #444;
-    display: block;
-}
-  
-#carouselPrueba > .arrow:focus {
-    outline: none;
-}
-.arrow{
-    background: #fffefe00 !important;
-
-}  
-.arrow:hover {
-    background: #cccccc09 !important;
-    cursor: pointer;
-}
-  
-#carouselPrueba > .prev {
-    left: 7px;
-    margin-right: 5px; 
-}
-  
-#carouselPrueba > .next {
-    right: 7px;
-}
-  
-.gallery {
-    margin: 5px ;
-    width: 80%;
-    overflow: hidden;
-  }
-  
-  .gallery ul {
-    margin: 10px auto;
-    list-style: none;
-    transition: margin-left 250ms;
-    /* eliminando los espacios en blanco entre los li inline-block'ed */
-    /* http://davidwalsh.name/remove-whitespace-inline-block */
-    font-size: 0;
-  }
-  
-  .gallery li {
-    display: inline-block;
-  }
+ 
 
