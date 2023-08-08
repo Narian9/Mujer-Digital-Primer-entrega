@@ -132,7 +132,8 @@ form{
     font-size: small !important;
 }
 .card{
-    width: 18rem;
+    width: 21rem;
+    margin: 0 2rem;
 }
 .arrow{
     background: #fffefe00 !important;
@@ -207,8 +208,9 @@ form{
             text-align: justify;
         }
         .card{
-            width: 14rem;
-            padding-left: 0 !important;
+            width: 15rem;
+            padding: 2px !important;
+            margin: 5px !important;
         }
 
     
