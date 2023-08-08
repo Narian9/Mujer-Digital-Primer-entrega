@@ -209,7 +209,7 @@ form{
         }
         .card{
             width: 15rem;
-            padding: 2px !important;
+            padding:0 2px !important;
             margin: 5px !important;
         }
 
