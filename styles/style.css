@@ -186,6 +186,9 @@ form{
             width: 55vw;
             word-wrap: break-word !important;
         }
+        #navbarSupportedContent > .navbar-nav{
+            background: white;
+        }
         .name-site-container > h1{
             font-size: 35px;
             
